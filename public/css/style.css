@@ -1,86 +1,38 @@
-/* :root {
-  background: green;
+.card {
+color: red;
 }
 
-
-html {
-  max-width: 1000px;
-  background: blue;
-}
-
-body {
-  background: white;
-}
-
-* {
-  color: red;
-}
-
-h1 {
-  color: darkgoldenrod;
-}
-
-.box {
-  color: aqua;
-}
-
-#user, .user {
-  color: black;
-}
-
-h1, h2, button {
-  color: brown;
-}
-
-.button {
-  background: red;
-}
-
-div > p {
-  color: palegreen;
-}
-
-footer > .user {
-  color: chartreuse;
-}
-
-footer em {
-  color: chartreuse;
-} */
-
-
-.card-dark {
-  background: #d5c7c7;
-}
-
-.item {
+.card > p {
   color: green;
 }
 
-.item:only-child {
-  color: blue;
+p:focus,
+p:active,
+p:hover {
+  -webkit-text-fill-color: rgb(246, 255, 0);
+  -webkit-text-stroke: 1px rgb(247, 44, 227);
+
+  direction: rtl;
 }
 
-.input-dark {
-  background: #aca7a7;
+#test {
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+  -webkit-text-stroke: inherit;
 }
 
-.input-dark[required] {
-  background: #a46464;
+* {
+  font-family: 'Roboto', sans-serif;
 }
 
-.input-dark[type="number"] {
-  background: #0fcd31;
+.test {
+  display: none;
 }
 
-.small-img[alt~="small"] {
-  height: 500px;
-}
+.block {
+  display: block;
+  background: rgb(191, 176, 176);
+  margin: auto;
 
-button[class|="btn"] {
-  background: red;
-}
-
-.btn::first-letter {
-  color:rgb(255, 255, 255)
+  width: 50%;
 }
