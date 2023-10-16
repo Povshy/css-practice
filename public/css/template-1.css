@@ -127,3 +127,8 @@ font-size: 17px;
   font-size: 19px;
   padding: 9px;
 }
+/* -------------------------- */
+.hero_text {
+  background-image: url('/img/ttt.jpg');
+  background-attachment: fixed;
+}
