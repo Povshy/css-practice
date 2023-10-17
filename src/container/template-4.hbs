@@ -1,0 +1,72 @@
+{{!-- Header --}}
+<header class="header">
+    <div class="">
+        {{>logo}}
+    </div>
+
+
+    <nav class="header_nav">
+        <div class="header_nav_right">
+            {{>nav1 list=header}}
+        </div>
+    </nav>
+</header>
+{{!-- ----------------- --}}
+
+{{!-- Main --}}
+{{#with main}}
+<div class="main">
+    <img src="{{image}}" alt="Main image" class="main_image">
+    <div class="main_content">
+        <h1 class="main_heading">{{heading}}</h1>
+        <p class="main_description">{{description}}</p>
+        <a href="{{href}}" class="button main_button">{{button}}</a>
+    </div>
+
+</div>
+{{/with}}
+{{!-- ---- --}}
+
+{{!-- Featured--}}
+<main class="featured">
+    {{#each featured}}
+    <div class="card">
+        <div class="featured_photo" style="background-image: url({{photo}});"></div>
+        <h2 class="featured_heading">{{heading}}</h2>
+        <p class="featured_info">{{info}}</p>
+        <a href="{{linkUrl}}" class="featured_button">{{linkText}}</a>
+    </div>
+    {{/each}}
+</main>
+{{!-- ---- --}}
+
+{{!-- Actions --}}
+
+<div class="action">
+    {{#each actions}}
+    <div class="action_form">
+        <h3 class="action_heading">{{heading}}</h3>
+
+        <a href="{{url}}" class="button action_button">{{text}}</a>
+    </div>
+    {{/each}}
+
+</div>
+
+{{!-- ----- --}}
+
+{{!-- Footer --}}
+<footer class="footer">
+    <div>
+        {{>logo}}
+        <span class="footer_copyright">Copyright 2023-2024</span>
+    </div>
+
+    {{#each footer}}
+    <div>
+        <span class="footer_title">{{title}}</span>
+        {{>nav1 list=links isVertical=true}}
+    </div>
+    {{/each}}
+</footer>
+{{!-- ---------------- --}}
