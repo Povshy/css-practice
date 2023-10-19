@@ -48,7 +48,9 @@
     {{! ↓ ця кострукція показує куди шаблонізатору треба вставляти код з container файлу --}}
     <div class="page">
         <div class="page_content">
+            {{> headerDark}}
             {{{body}}}
+            {{> footerDark}}
         </div>
     </div>
 

@@ -1,112 +1,42 @@
 {{!-- Header --}}
-<header class="header">
-    <div class="">
-        {{>logo}}
-    </div>
-
-
-    <nav class="header_nav">
-        <div class="header_nav_right">
-            {{>nav1 list=header}}
-        </div>
-    </nav>
-</header>
 {{!-- ----------------- --}}
 
-{{!- Main --}}
+{{!- Hero --}}
 <main class="main">
-    {{!-- Info --}}
-    {{#with info}}
-    <div class="info">
-        <h1 class="info_title">{{title}}</h1>
-        <p class="info_text">{{description}}</p>
+    {{#with hero}}
+    <div class="hero">
+        <h1 class="hero_title">{{title}}</h1>
+        <p class="hero_text">{{description}}</p>
+        <a href="{{button.url}}" class="hero_button">{{button.text}}</a>
     </div>
     {{/with}}
-    {{!-- --- --}}
-
-    {{!-- Form --}}
-    {{#with form}}
-    <form class="form">
-
-        <div class="form_input_list">
-            {{#each inputs}}
-            <input type="{{type}}" placeholder="{{placeholder}}" class="form_input" name="{{name}}"
-                id="form_input-{{id}}">
-            {{/each}}
-        </div>
-
-        <div class="form_checkbox">
-            <input type="checkbox" name="{{checkbox.name}}" id="{{checkbox.name}}">
-            <label for="{{checkbox.name}}">{{checkbox.label}}</label>
-        </div>
-
-        <button type="submit" class="form_button">{{button}}</button>
-        <p class="form_info">{{info}}</p>
-
-    </form>
-    {{/with}}
-    {{!-- --}}
 </main>
 {{!-- ---------- --}}
 
-{{!-- Updates--}}
-{{#with updates}}
-<div class="updates">
-    <h2>{{title}}</h2>
-    {{#each list}}
-    <div class="list">
-        <div class="list_image" style="background-image: url('https://picsum.photos/32/32');"></div>
-        <div class="list_text">
-            <strong class="list_name">{{nickname}}</strong>
-            <p class="list_description">{{description}}</p>
-        </div>
-
-    </div>
-    {{/each}}
-
-    {{#with show_all}}
-    <a href="{{url}}">{{text}}</a>
-    {{/with}}
+{{!-- About--}}
+{{#with about}}
+<div class="about">
+    <h2>{{heading}}</h2>
+    <p>{{info}}</p>
 </div>
 {{/with}}
 
 {{!-- -------- --}}
 
-{{!-- Expirience --}}
-{{#with expirience}}
-<div class="ex_badge">
-    {{badge}}
-</div>
+{{!-- Articles --}}
+<div class="articles">
+    <div class="articles_head">
+        <h2>Our Articles</h2>
+        <button>View All</button>
+    </div>
 
-<div class="expirience">
-
-
-    <h2 class="ex_title">{{title}}</h2>
-
-    <div class="ex_list">
-        {{#each list}}
-        <div class="ex_list_section">
-            <h3>{{name}}</h3>
-            <p>{{details}}</p>
-        </div>
+    <div class="articles_box">
+        {{#each articles}}
+        {{> articleCardDark data=this}}
         {{/each}}
     </div>
 </div>
-{{/with}}
 {{!-- ---------- --}}
 
 {{!-- Footer --}}
-<footer class="footer">
-    <div>
-        {{>logo}}
-        <span class="footer_copyright">Copyright 2023-2024</span>
-    </div>
-
-    {{#each footer}}
-    <div>
-        <span class="footer_title">{{title}}</span>
-        {{>nav1 list=links isVertical=true}}
-    </div>
-    {{/each}}
-</footer>
 {{!-- ---------------- --}}
