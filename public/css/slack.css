@@ -297,6 +297,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
         padding-top: 55px;
+        margin-top: auto;
     }
     .work_arrow > a {
         color: #1264A3;
@@ -304,62 +305,57 @@ body {
     }
 
     /* ------------------ */
+    .features_title {
+        font-size: var(--size-6);
+    }
+    .features_description {
+        font-size: var(--size-2);
+        max-width: 520px;
+        line-height: var(--line-height);
+    }
+    
+    
+    .hero_label {
+        font-size: var(--size-1);
+    }
+    
+    .hero_title {
+        font-size: 50px;
+    }
+    .hero_info {
+        font-size: var(--size-2);
+    }
+    /* ---Del */
+    .deliver_info > p {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    .deliver_info > span {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    /* Work---------------- */
+    .work_title {
+        font-size: var(--size-6);
+        font-weight: 700;
+    }
+    .work_img_info {
+        font-size: var(--size-1);
+        font-weight: 700;
+        padding-top: var(--spacing-1);
+        padding-bottom: var(--spacing-2);
+    }
+    
+    .work_card_name {
+        font-size: var(--size-3);
+        font-weight: 700;
+        line-height: 150%;
+        width: 100%;
+    }
+    
 }
 /* ---------------- */
-.features_title {
-    font-size: var(--size-6);
-    margin: 0;
-}
-.features_description {
-    font-size: var(--size-2);
-    max-width: 520px;
-    line-height: var(--line-height);
-    margin: 0;
-}
-
-
-.hero_label {
-    font-size: var(--size-1);
-}
-
-.hero_title {
-    font-size: 50px;
-    margin: 0;
-}
-.hero_info {
-    font-size: var(--size-2);
-    margin: 0;
-}
-/* ---Del */
-.deliver_info > p {
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 150%;
-    margin: 0;
-}
-.deliver_info > span {
-    font-size: 16px;
-    font-weight: 700;
-}
-/* Work---------------- */
-.work_title {
-    font-size: var(--size-6);
-    font-weight: 700;
-    margin: 0;
-}
-.work_img_info {
-    font-size: var(--size-1);
-    font-weight: 700;
-}
-
-.work_card_name {
-    font-size: var(--size-3);
-    font-weight: 700;
-    line-height: 150%;
-    margin: 0;
-    width: 100%;
-}
-
 
 
 /* ------------------- */
