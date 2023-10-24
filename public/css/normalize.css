@@ -73,9 +73,6 @@ pre {
 * Remove the gray background on active links in IE 10.
 */
 
-a {
-  background-color: transparent;
-}
 
 /**
 * 1. Remove the bottom border in Chrome 57-
@@ -589,9 +586,6 @@ u,
 ul,
 var,
 video {
-margin: 0;
-padding: 0;
-border: 0;
 font-size: 100%;
 vertical-align: baseline;
 }
