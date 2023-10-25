@@ -298,6 +298,7 @@ body {
         justify-content: space-between;
         padding-top: 55px;
         margin-top: auto;
+        margin-bottom: auto;
     }
     .work_arrow > a {
         color: #1264A3;
